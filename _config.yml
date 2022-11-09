@@ -18,38 +18,84 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: "Purelog: for Writers"
+email: mail@brennanbrown.ca
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A responsive sidebar Jekyll theme using the Pure.css framework, 
+  designed for writers and bloggers of all kinds.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://purelog.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+repository: brennanbrown/purelog
+twitter: brennankbrown
+github: brennanbrown
+
+header_image: assets/profile.png
+
+google_analytics:
+comments: true
+disqus: purelog-jekyll
+
+author: Brennan K. Brown
+author_bio: >-
+  Hey there! 😄 My name is Brennan, I'm a 25-year-old Métis web developer and 
+  content strategist from Winnipeg, Manitoba and currently reside in Calgary, 
+  Alberta. I've recently compeleted a Full Stack Developer Program at EvolveU, 
+  and I'm looking to help those that need web development work done, or 
+  searching for ideas and management for their next content project.
+author_pic: https://brennanbrown.ca/img/avatar.png
+paginate: 4
+paginate_path: "/:num/"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Build settings
-theme: minima
+theme: null
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+permalink: /:title
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      author: Brennan K. Brown
+      avatar: assets/profile-sm.png
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: post
+      content-type: notes
+  - scope:
+      path: ""
+      type: journals
+    values:
+      layout: journal-entry
+      content-type: journals
+
+# Allows all pages to be put into `_pages` folder
+# for easier navigation and better SEO.
+collections:
+  pages:
+    output: true
+    permalink: /:title
+  notes:
+    output: true
+    permalink: /notes/:title
+  journals:
+    output: true
+    permalink: /journals/:title
 
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - ".jekyll-cache"
+  - "Gemfile"
+  - "Gemfile.lock"
