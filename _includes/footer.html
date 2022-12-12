@@ -1,38 +1,21 @@
-<hr/>
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
 
-<footer class="footer">
-    <div class="pure-menu pure-menu-horizontal">
-        <ul>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="/">
-                    <i class="fas fa-home"></i>
-                    <span class="md-display">Home</span>
-                </a>
-            </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="https://twitter.com/{{site.twitter}}">
-                    <i class="fab fa-twitter"></i>
-                    <span class="md-display">Twitter</span>
-                </a>
-            </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="https://github.com/{{site.github}}">
-                    <i class="fab fa-github"></i>
-                    <span class="md-display">GitHub</span>
-                </a>
-            </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="mailto:{{site.email}}">
-                    <i class="fas fa-paper-plane"></i>
-                    <span class="md-display">E-mail</span>
-                </a>
-            </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="https://github.com/{{site.repository}}">
-                    <i class="fas fa-code"></i>
-                    <span class="md-display">Source Code</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</footer>
+    {% if site.footer.links %}
+      {% for link in site.footer.links %}
+        {% if link.label and link.url %}
+          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% unless site.atom_feed.hide %}
+      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    {% endunless %}
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>

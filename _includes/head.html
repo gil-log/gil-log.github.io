@@ -1,23 +1,25 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Jekyll">
-    <link rel="license" href="LICENSE">
+<meta charset="utf-8">
 
-    <meta name="application-name" content="{{ site.title }}">
-    <meta name="theme-color" content="{{ site.theme_color }}">
-    <link rel="archives" href="{{site.url}}/archives/">
+{% include seo.html %}
 
-    <meta name="robots" content="index,follow"> <!-- All Search Engines -->
-    <meta name="googlebot" content="index,follow"><!-- Google Specific    -->
+{% unless site.atom_feed.hide %}
+  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% endunless %}
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="/assets/main.css">
-    <link rel="stylesheet" href="/assets/code.css">
-    <script src="https://kit.fontawesome.com/e9dddf84a6.js" crossorigin="anonymous"></script>
-    {%- seo -%}
-    {%- feed_meta -%}
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
-</head>
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+{% if site.head_scripts %}
+  {% for script in site.head_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
