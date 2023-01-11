@@ -61,6 +61,8 @@ atom_feed:
   hide                   : # true, false (default)
 search                   : true
 search_full_content      : true
+lunr:
+  search_within_pages: true
 search_provider          : google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -285,7 +287,8 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
       mathjax: true
       sidebar_main: true
+
