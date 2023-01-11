@@ -63,7 +63,7 @@ search                   : true
 search_full_content      : true
 lunr:
   search_within_pages: true
-search_provider          : google
+search_provider          :
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -106,12 +106,15 @@ author:
   name             : "Gillog"
   avatar           : "/assets/images/profile.png"
   bio              : "기록보단 길록을"
-  location         : "Seoul, Korea"
-  email            : "swgil007@naver.com"
+  # location         : "Seoul, Korea"
+  # email            : "swgil007@naver.com"
   links:
-    - label: "Email"
+    - label: "github.com/gil-log"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gil-log"
+    - label: "swgil007@naver.com"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:swgil007@naver.com"
+      url: "mailto:swgil007@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -121,9 +124,6 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/gil-log"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
