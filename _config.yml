@@ -280,7 +280,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "assets/js/lunr"
       type: posts
     values:
       layout: single
