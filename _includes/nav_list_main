@@ -10,7 +10,7 @@
       {% for category in site.categories %}
         <span class="nav__sub-title">{{category[0]}}</span>
           <ul>
-            <li><a href="/categories/{{category[0]}}" class="">{{category[0]}} ({{category[1].size}})</a></li>
+            <li><a href="/categories/{{category[0] | downcase}}" class="">{{category[0]}} ({{category[1].size}})</a></li>
           </ul>
       {% endfor %}
       </li>
