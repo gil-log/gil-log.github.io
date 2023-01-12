@@ -1,0 +1,90 @@
+---
+title: "선택 정렬(Selection Sort)"
+last_modified_at: 2020-10-09T07:20
+categories:
+  - Algorithm
+  - Java
+tags:
+  - 
+toc: true
+toc_label: "목차"
+toc_icon: "sort"
+toc_sticky: true
+---
+
+# 💥❗ 주의사항 ❗💥
+**본 게시글은 작성자 본인의 학습을 위함이라 부족한 점이 많습니다.
+선생님들의 따뜻한 조언과 피드백 부탁드립니다! 감사합니다! 🙇‍♂️**
+
+<br>
+
+# 1. 선택 정렬(Selection Sort)
+
+> 선택 정렬(Selection Sort)은 **제자리 정렬 알고리즘**의 하나로 비교하는 것이 상수 시간에 이루어진다는 가정 아래, n개의 주어진 리스트를 이와 같은 방법으로 정렬하는 데에는 **Θ(n^2) 만큼의 시간**이 걸린다.
+선택 정렬은 **알고리즘이 단순**하며 사용할 수 있는 메모리가 제한적인 경우에 **사용시 성능 상의 이점**이 있다.<br>-WikiPedia
+
+## 1.1 선택 정렬 방법
+
+1. 주어진 리스트 중에 **맨 앞 인덱스 부터 하나하나 비교 하며 최소값을 찾는다.**
+2. 그 최소값을 맨 앞 인덱스에 위치한 값과 교체한다.
+3. 인덱스를 늘려가며 같은 방법으로 교체한다.
+
+![](https://i.ibb.co/1nB1W9X/Selection-Sort-Animation.gif)
+
+
+위 그림과 같은 방식으로 **인덱스 0부터 최소값을 찾아 앞에서부터 채워나가는 방식**의 알고리즘이다.
+
+## 1.2 선택 정렬 특징
+
+선택 정렬은 2번의 for문 loop를 통해서 배열을 비교하고, 교환 하는 방식으로 시간, 공간 복잡도는 아래와 같다.
+
+|복잡도|비교|교환|
+|:---:|:---:|:---:|
+|최악 시간복잡도|O(n^2)|O(n)|
+|최선 시간복잡도|O(n^2)|O(n)|
+|평균 시간복잡도|O(n^2)|O(n)|
+|공간복잡도|O(n)||
+
+
+## 1.3 선택 정렬 코드
+
+``` java
+void selectionSort(int[] list) {
+    int indexMin, temp;
+
+    for (int i = 0; i < list.length - 1; i++) {
+        indexMin = i;
+        for (int j = i + 1; j < list.length; j++) {
+            // 제일 작은 값을 가진 인덱스 찾기
+            if (list[j] < list[indexMin]) {
+                indexMin = j;
+            }
+        }
+        // 제일 작은 값 temp에 저장 후 i 인덱스와 값 바꿔주기
+        temp = list[indexMin];
+        list[indexMin] = list[i];
+        list[i] = temp;
+    }
+}
+```
+
+
+
+
+
+
+
+
+# 🙆‍♂️ 참고사이트 🙇‍♂️
+
+[[알고리즘] 기본 정렬 알고리즘( 선택정렬, 버블정렬, 삽입정렬)[reakwon님]](https://reakwon.tistory.com/37?category=308657)
+
+[정렬 알고리즘 정리(With Big O Notation)[lghaske님]](https://medium.com/@lghaske/%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%A0%95%EB%A6%AC-with-big-o-82391afd20a2)
+
+[]()
+
+[]()
+
+[]()
+
+[]()
