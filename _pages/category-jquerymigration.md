@@ -1,9 +1,9 @@
 ---
-title: 'gillog'
+title: 'jQueryMigration'
 layout: category
-permalink: /categories/gillog
+permalink: /categories/jquerymigration
 author_profile: true
 sidebar_main: true
 ---
-{% assign posts = site.categories.gillog %}
+{% assign posts = site.categories.jquerymigration %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
