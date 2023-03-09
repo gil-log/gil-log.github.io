@@ -2,7 +2,7 @@
 title: "배열 리스트(Array List)"
 last_modified_at: 2020-10-16T06:44
 categories: 
-  - 자료구조
+  - data-structure
 tags: 
   - 'ArrayList' 
   - '자료구조'

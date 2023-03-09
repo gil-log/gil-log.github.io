@@ -1,8 +1,8 @@
 ---
 title: "Entity, DTO, VO 바로 알기"
 last_modified_at: 2020-10-11T10:39
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'DTO' 
   - 'VO' 

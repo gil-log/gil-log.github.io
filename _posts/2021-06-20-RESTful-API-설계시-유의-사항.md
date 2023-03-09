@@ -1,8 +1,8 @@
 ---
 title: "RESTful API 설계시 유의 사항"
 last_modified_at: 2021-06-20T23:42
-categories: 
-  - 개념
+categories:
+    - concept
 tags: 
   - 'API' 
   - 'REST' 

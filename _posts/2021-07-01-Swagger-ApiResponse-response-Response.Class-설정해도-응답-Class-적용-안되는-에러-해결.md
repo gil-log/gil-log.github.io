@@ -2,7 +2,7 @@
 title: "[Swagger] @ApiResponse response = Response.Class  설정해도 응답 Class 적용 안되는 에러 해결"
 last_modified_at: 2021-07-01T23:56
 categories: 
-  - 에러
+  - error
 tags: 
   - '@ApiResponse' 
   - 'OAS_30' 

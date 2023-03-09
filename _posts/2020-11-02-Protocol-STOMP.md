@@ -1,8 +1,8 @@
 ---
 title: "[Protocol] STOMP"
 last_modified_at: 2020-11-02T23:17
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'protocol' 
   - 'stomp'

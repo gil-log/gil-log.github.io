@@ -2,7 +2,7 @@
 title: "Profiling Tool & APM Tool"
 last_modified_at: 2021-04-27T00:05
 categories: 
-  - 자바성능튜닝이야기
+  - java-performance-tuning-story
 tags: 
   - 'Profiling Tool' 
   - '성능 측정' 

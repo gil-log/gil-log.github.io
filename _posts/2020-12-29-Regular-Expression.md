@@ -1,8 +1,8 @@
 ---
 title: "Regular Expression"
 last_modified_at: 2020-12-29T09:51
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'regular expression' 
   - '정규 표현식'

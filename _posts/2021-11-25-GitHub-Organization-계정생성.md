@@ -2,7 +2,7 @@
 title: "[GitHub] Organization 계정 생성"
 last_modified_at: 2021-11-25T23:34
 categories: 
-  - 형상관리
+  - configuration-management
 tags: 
   - 'github' 
   - 'organization'

@@ -1,8 +1,8 @@
 ---
 title: "Transaction Isolation Level"
 last_modified_at: 2021-05-24T00:56
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'Nonrepeatable Read' 
   - 'dirty read' 

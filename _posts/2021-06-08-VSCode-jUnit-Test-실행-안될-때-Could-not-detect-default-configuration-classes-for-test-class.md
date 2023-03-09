@@ -2,7 +2,7 @@
 title: "[VSCode] jUnit Test 실행 안될 때, Could not detect default configuration classes for test class"
 last_modified_at: 2021-06-08T23:48
 categories: 
-  - 에러
+  - error
 tags: 
   - 'error' 
   - 'junit' 

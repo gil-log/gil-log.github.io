@@ -2,7 +2,7 @@
 title: "[GitHub] 팀 프로젝트 협업하기(Issues, Projects, Milestones 활용)"
 last_modified_at: 2021-12-01T00:48
 categories: 
-  - 형상관리
+  - configuration-management
 tags: 
   - 'Issues' 
   - 'Milestone' 

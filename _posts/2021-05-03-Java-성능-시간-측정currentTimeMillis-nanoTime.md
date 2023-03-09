@@ -2,7 +2,7 @@
 title: "Java 성능 시간 측정"
 last_modified_at: 2021-05-03T00:07
 categories: 
-  - 자바성능튜닝이야기
+  - java-performance-tuning-story
 tags: 
   - 'JMH' 
   - 'Java' 

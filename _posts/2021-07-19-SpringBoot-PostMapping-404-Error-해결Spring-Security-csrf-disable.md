@@ -2,7 +2,7 @@
 title: "[SpringBoot] PostMapping 404 Error 해결(Spring Security csrf disable)"
 last_modified_at: 2021-07-19T22:02
 categories: 
-  - 에러
+  - error
 tags: 
   - '404' 
   - 'POST' 

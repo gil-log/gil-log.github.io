@@ -1,8 +1,8 @@
 ---
 title: "Transaction(ACID, Commit, Rollback)"
 last_modified_at: 2021-05-22T09:08
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'ACID' 
   - 'Atomicity' 

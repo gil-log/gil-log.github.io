@@ -2,7 +2,7 @@
 title: "[SpringBoot] Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured. 에러 해결"
 last_modified_at: 2021-06-03T22:36
 categories: 
-  - 에러
+  - error
 tags: 
   - 'Springboot' 
   - 'vscode'

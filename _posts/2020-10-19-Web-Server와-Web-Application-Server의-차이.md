@@ -1,8 +1,8 @@
 ---
 title: "Web Server와 Web Application Server"
 last_modified_at: 2020-10-19T08:59
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'web' 
   - '개념' 

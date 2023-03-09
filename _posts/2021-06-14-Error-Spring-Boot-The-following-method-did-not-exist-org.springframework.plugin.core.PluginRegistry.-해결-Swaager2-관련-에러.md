@@ -2,7 +2,7 @@
 title: "[Error] Spring Boot - The following method did not exist: org.springframework.plugin.core.PluginRegistry. 해결 - Swaager2 관련 에러"
 last_modified_at: 2021-06-14T23:20
 categories: 
-  - 에러
+  - error
 tags: 
   - 'Springboot' 
   - 'error' 

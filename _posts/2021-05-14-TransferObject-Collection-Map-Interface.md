@@ -2,7 +2,7 @@
 title: "[TransferObject] Collection, Map Interface"
 last_modified_at: 2021-05-14T00:05
 categories: 
-  - 자바성능튜닝이야기
+  - java-performance-tuning-story
 tags: 
   - 'Collection' 
   - 'Java' 

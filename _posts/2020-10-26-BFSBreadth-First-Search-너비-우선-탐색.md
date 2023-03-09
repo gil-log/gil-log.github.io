@@ -2,7 +2,7 @@
 title: "BFS(Breadth First Search, 너비 우선 탐색)"
 last_modified_at: 2020-10-26T01:27
 categories: 
-  - 알고리즘
+  - algorithm
 tags: 
   - 'BFS' 
   - '알고리즘' 

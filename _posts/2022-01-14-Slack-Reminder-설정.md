@@ -2,7 +2,7 @@
 title: "[Slack] Reminder 설정"
 last_modified_at: 2022-01-14T00:21
 categories: 
-  - 협업
+  - cooperation
 tags: 
   - 'reminder' 
   - 'slack'

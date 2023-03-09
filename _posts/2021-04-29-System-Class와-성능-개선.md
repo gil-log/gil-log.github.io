@@ -2,7 +2,7 @@
 title: "System Class와 성능 개선"
 last_modified_at: 2021-04-29T00:36
 categories: 
-  - 자바성능튜닝이야기
+  - java-performance-tuning-story
 tags: 
   - '@property' 
   - 'System Class' 

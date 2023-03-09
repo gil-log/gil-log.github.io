@@ -1,8 +1,8 @@
 ---
 title: "CORS(Cross-Origin Resource Sharing)란? Spring Tomcat 설정과 함께 간략히!"
 last_modified_at: 2021-07-14T09:53
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'cors' 
   - 'preflight' 

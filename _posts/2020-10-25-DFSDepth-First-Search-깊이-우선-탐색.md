@@ -2,7 +2,7 @@
 title: "DFS(Depth First Search, 깊이 우선 탐색)"
 last_modified_at: 2020-10-25T00:39
 categories: 
-  - 알고리즘
+  - algorithm
 tags: 
   - 'DFS' 
   - '알고리즘' 

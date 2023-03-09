@@ -2,7 +2,7 @@
 title: "[Linux] CentOS 6.X removing mirrorlist with no valid mirrors 에러 해결 "
 last_modified_at: 2021-04-09T04:58
 categories: 
-  - 에러
+  - error
 tags: 
   - 'CentOS 6.9' 
   - 'linux' 
