@@ -2,7 +2,7 @@
 title: "SVN(Subversion) - 개념 및 명령어"
 last_modified_at: 2020-11-04T22:19
 categories: 
-  - 형상관리
+  - configuration-management
 tags: 
   - 'svn'
 toc: true

@@ -2,7 +2,7 @@
 title: "Transfer Object Pattern"
 last_modified_at: 2021-04-25T09:57
 categories: 
-  - 자바성능튜닝이야기
+  - java-performance-tuning-story
 tags: 
   - 'Design Pattern' 
   - 'Transfer Object Pattern' 

@@ -2,7 +2,7 @@
 title: "[Spring] CORS preFlight(OPTIONS Method) Interceptor 검증 로직 제외해주기(Access to XMLHttpRequest at '' from origin '' has been blocked by CORS policy)"
 last_modified_at: 2021-07-22T04:43
 categories: 
-  - 에러
+  - error
 tags: 
   - 'CORS policy' 
   - 'Interceptor' 

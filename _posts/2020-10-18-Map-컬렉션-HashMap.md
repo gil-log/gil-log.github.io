@@ -2,7 +2,7 @@
 title: "Map 컬렉션 - HashMap, LinkedHashMap, Hashtable, TreeMap"
 last_modified_at: 2020-10-18T02:09
 categories: 
-  - 자료구조
+  - data-structure
 tags: 
   - 'HashMap' 
   - 'HashTable' 

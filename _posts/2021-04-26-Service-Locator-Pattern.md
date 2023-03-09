@@ -2,7 +2,7 @@
 title: "Service Locator Pattern"
 last_modified_at: 2021-04-26T11:36
 categories: 
-  - 자바성능튜닝이야기
+  - java-performance-tuning-story
 tags: 
   - 'Design Pattern' 
   - 'Service Locator' 

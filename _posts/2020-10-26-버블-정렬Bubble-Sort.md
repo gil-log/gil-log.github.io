@@ -2,7 +2,7 @@
 title: "버블 정렬(Bubble Sort)"
 last_modified_at: 2020-10-26T23:52
 categories: 
-  - 알고리즘
+  - algorithm
 tags: 
   - '버블 정렬' 
   - '알고리즘' 

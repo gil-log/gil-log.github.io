@@ -2,7 +2,7 @@
 title: "SpringBoot - MySQL Connection 문제 해결"
 last_modified_at: 2020-10-19T13:54
 categories: 
-  - 에러
+  - error
 tags: 
   - '에러'
 toc: true

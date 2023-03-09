@@ -2,7 +2,7 @@
 title: "No qualifying bean of type, 생성자 주입 방식 @Resource(name) 에러"
 last_modified_at: 2020-11-07T08:49
 categories: 
-  - 에러
+  - error
 tags: 
   - '에러'
 toc: true

@@ -2,7 +2,7 @@
 title: "[GitHub] Organization Team 관리"
 last_modified_at: 2021-11-30T00:26
 categories: 
-  - 형상관리
+  - configuration-management
 tags: 
   - 'github' 
   - 'organization' 

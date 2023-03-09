@@ -1,9 +1,9 @@
 ---
-title: '알고리즘'
+title: '낙서장'
 layout: category
-permalink: /categories/algorithm
+permalink: /categories/note
 author_profile: true
 sidebar_main: true
 ---
-{% assign posts = site.categories.algorithm %}
+{% assign posts = site.categories.note %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

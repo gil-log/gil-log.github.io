@@ -2,7 +2,7 @@
 title: "Springboot JPA - Cannot resolve table, column Annotation 에러"
 last_modified_at: 2020-10-12T14:07
 categories: 
-  - 에러
+  - error
 tags: 
   - '에러'
 toc: true

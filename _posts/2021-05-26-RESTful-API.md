@@ -1,8 +1,8 @@
 ---
 title: "REST API"
 last_modified_at: 2021-05-26T00:39
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'API' 
   - 'REST' 

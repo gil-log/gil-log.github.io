@@ -2,7 +2,7 @@
 title: "SpringBoot, MySQL TimeZone 에러"
 last_modified_at: 2020-10-12T13:44
 categories: 
-  - 에러
+  - error
 tags: 
   - '에러'
 toc: true

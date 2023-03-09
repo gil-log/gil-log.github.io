@@ -2,7 +2,7 @@
 title: "[JPA] Spring Boot JPA Entity Table 대, 소문자 구분 못하는 경우 해결"
 last_modified_at: 2021-07-10T00:24
 categories: 
-  - 에러
+  - error
 tags: 
   - 'Hibernate' 
   - 'JPA' 

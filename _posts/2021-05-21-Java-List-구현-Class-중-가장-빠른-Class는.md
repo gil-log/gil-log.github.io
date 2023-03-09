@@ -2,7 +2,7 @@
 title: "[Java] List 구현 Class 중 가장 빠른 Class는??"
 last_modified_at: 2021-05-21T00:31
 categories: 
-  - 자바성능튜닝이야기
+  - java-performance-tuning-story
 tags: 
   - 'Java' 
   - 'List' 

@@ -2,7 +2,7 @@
 title: "[Algorithm] 재귀와 반복문"
 last_modified_at: 2020-11-18T00:53
 categories: 
-  - 알고리즘
+  - algorithm
 tags: 
   - 'Java' 
   - 'algorithm' 

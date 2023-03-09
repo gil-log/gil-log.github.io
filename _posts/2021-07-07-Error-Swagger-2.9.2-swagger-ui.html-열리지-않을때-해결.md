@@ -2,7 +2,7 @@
 title: "[Error] Swagger 2.9.2 /swagger-ui.html 열리지 않을때 해결"
 last_modified_at: 2021-07-07T01:54
 categories: 
-  - 에러
+  - error
 tags: 
   - 'Spring' 
   - 'Spring Fox' 

@@ -2,7 +2,7 @@
 title: "탐욕 알고리즘(Greedy Algorithm)"
 last_modified_at: 2020-10-08T04:19
 categories: 
-  - 알고리즘
+  - algorithm
 tags: 
   - '알고리즘' 
   - '탐욕 알고리즘'

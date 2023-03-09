@@ -1,8 +1,8 @@
 ---
 title: "Framework vs Library"
 last_modified_at: 2020-12-02T23:11
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'framework' 
   - 'library'

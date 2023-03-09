@@ -2,7 +2,7 @@
 title: "연결 리스트(Linked List)"
 last_modified_at: 2020-10-14T03:21
 categories: 
-  - 자료구조
+  - data-structure
 tags: 
   - 'linked list' 
   - '자료구조'

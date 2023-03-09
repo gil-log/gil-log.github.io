@@ -2,7 +2,7 @@
 title: "String Class와 성능 이슈, String 제대로 사용하기"
 last_modified_at: 2021-05-04T00:12
 categories: 
-  - 자바성능튜닝이야기
+  - java-performance-tuning-story
 tags: 
   - 'Java' 
   - 'StringBuffer' 

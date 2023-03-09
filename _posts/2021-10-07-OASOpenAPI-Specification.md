@@ -1,8 +1,8 @@
 ---
 title: "OAS(OpenAPI Specification)"
 last_modified_at: 2021-10-07T17:35
-categories: 
-  - 개념
+categories:
+  - concept
 tags: 
   - 'OAS' 
   - 'Swagger' 

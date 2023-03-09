@@ -2,7 +2,7 @@
 title: "동적 계획법(Dynamic Programming)"
 last_modified_at: 2020-10-07T06:49
 categories: 
-  - 알고리즘
+  - algorithm
 tags: 
   - 'DP' 
   - '개념' 

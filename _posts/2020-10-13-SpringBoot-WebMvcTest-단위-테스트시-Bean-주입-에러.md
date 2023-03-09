@@ -2,7 +2,7 @@
 title: "[SpringBoot] @WebMvcTest 단위 테스트시 Bean 주입 에러"
 last_modified_at: 2020-10-13T08:51
 categories: 
-  - 에러
+  - error
 tags: 
   - '에러'
 toc: true

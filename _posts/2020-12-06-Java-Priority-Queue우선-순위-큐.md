@@ -2,7 +2,7 @@
 title: "[Java] Priority Queue(우선 순위 큐)"
 last_modified_at: 2020-12-06T00:42
 categories: 
-  - 자료구조
+  - data-structure
 tags: 
   - 'PriorityQueue' 
   - '우선 순위 큐' 
