@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gil-log.github.io/sitemap.xml
