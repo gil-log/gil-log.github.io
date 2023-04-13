@@ -697,41 +697,46 @@ CD 단계에서는 하기 4과정을 거치도록 구성되었습니다.
 
 ```groovy
 pipeline {
-  agent any
+    agent any
 
-  environment {
-    PROJECT_PATH = "/var/lib/jenkins/workspace/?????"
-    BATCH_PATH = "/원하는/폴더명"
-    GRADLE_OPTS = "-Xmx128m"
-    JAVA_OPTS = "-Xmx128m"
-  }
-
-  stages {
-    stage('Build') {
-      steps {
-        sh "cd ${PROJECT_PATH} && ./gradlew build -g /tmp/gradle_cache -Dorg.gradle.jvmargs=\"${GRADLE_OPTS}\""
-      }
+    environment {
+        PROJECT_PATH = "/var/lib/jenkins/workspace/해당Project폴더명"
+        BATCH_PATH = "/원하는/폴더명"
+        GRADLE_OPTS = "-Xmx128m"
+        JAVA_OPTS = "-Xmx128m"
     }
 
-    stage('Copy jar') {
-      steps {
-        sh "cp ${PROJECT_PATH}/build/libs/*.jar ${BATCH_PATH}/"
-      }
-    }
+    stages {
+        stage('Build') {
+            steps {
+                sh "cd ${PROJECT_PATH} && ./gradlew build -g /tmp/gradle_cache -Dorg.gradle.jvmargs=\"${GRADLE_OPTS}\""
+            }
+        }
 
-    stage('Stop current process') {
-      steps {
-        sh "while [[ \$(lsof -i:80) ]]; do lsof -i :80 | awk '{print \$2}' | xargs kill -9 ; sleep 1; done"
-        sh "echo 'There is no process using 80 port.'"
-      }
-    }
+        stage('Copy jar') {
+            steps {
+                sh "cp ${PROJECT_PATH}/build/libs/*SNAPSHOT.jar ${BATCH_PATH}/"
+            }
+        }
 
-    stage('Start Application') {
-      steps {
-        sh "nohup java ${JAVA_OPTS} -jar ${BATCH_PATH}/*.jar > /dev/null 2>&1 &"
-      }
+        stage('Stop current process') {
+            steps {
+                sh '''
+                  #!/bin/bash
+                  while [[ $(fuser -n tcp -k 8081) ]];
+                  do sleep 1; 
+                  done
+                '''
+                sh "echo 'There is no process using 8081 port.'"
+            }
+        }
+
+        stage('Start Application') {
+            steps {
+                sh "JENKINS_NODE_COOKIE=dontKillMe nohup java ${JAVA_OPTS} -jar -Dserver.port=8081 ${BATCH_PATH}/*SNAPSHOT.jar > /dev/null 2>&1 &"
+            }
+        }
     }
-  }
 }
 ```
 
@@ -743,7 +748,6 @@ pipeline {
 
 
 <br>
-
 
 ---
 
